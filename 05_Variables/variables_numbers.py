@@ -25,7 +25,9 @@ def other():
 	#remainder/ modulus
 	print("Modulo: ", y % z)
 	#forcing float to become int
-	print("int to float: int(x)", int(44.4))
+	print("int to float: float(x)", float(44))
+	# float an int
+	print("float to int: int(x)", int(44.4))
 
 if __name__ == "__main__":
 	main() 
