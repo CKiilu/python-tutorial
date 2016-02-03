@@ -13,12 +13,29 @@ def main():
 	#add something at beginning
 	y.insert(2, 7)
 	print("Add to beginning: ", type(y), y)
+
+
 	string()
+
+	charprint()
+
 
 def string():
 	z = "scurrae"
 	# Slicing strings
 	print("Slice of scurrae (z[1:4]): ",z[1: 4])
+
+def charprint():
+	"""Printing all elements in a list or string"""
+	a = (1, 3, 4 , 5, 6)
+	for c in a:
+		print(c)
+
+# String on multi-line
+	b = "blaze up the fire"
+	for c in b:
+		print(c)
+	
 
 if __name__ == "__main__":
 	main()
