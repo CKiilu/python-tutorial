@@ -14,6 +14,18 @@ def main():
 
 def other():
 	"""Other useful functions"""
+	y = 44.4
+	z = 5
+	#Actual answer
+	print("Actual: ", y / z)
+	#Round down while dividing
+	print("Round down: ", y // z)
+	#round off while dividing
+	print("Round off: ", round(y / z))
+	#remainder/ modulus
+	print("Modulo: ", y % z)
+	#forcing float to become int
+	print("int to float: int(x)", int(44.4))
 
 if __name__ == "__main__":
-	main()
+	main() 
