@@ -3,4 +3,4 @@
 #read lines from the file
 ln = open('lines.txt')
 for line in ln.readlines():
-	print(line)
+	print(line, end='')

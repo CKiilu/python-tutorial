@@ -5,16 +5,16 @@
 
 class Fibo():
 	def __init__(self, a, b):
-		self.a = a
+		self.a = b
 		self.b = b
 
-	def process(self):
+	def series(self):
 		while(True):
 			yield(self.b)
 			self.a, self.b = self.b, self.a + self.b
 
-obj = Fibo(0, 100)
-for j in obj.process():
-	if j > 1000:
+fido = Fibo(0, 100)
+for x in fido.series():
+	if x > 1000:
 	 break
-	print(j)
+	print(x)
