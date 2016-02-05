@@ -16,10 +16,15 @@ def meth1():
 
 def meth2():
 	print("\nMethod two\n")
+	text = open('raven.txt')
+	for line in text:
+		match = re.search('(Len|Neverm)ore', line)
+		if match:
+			print(match.group())
 
 def meth3():
 	print("\nBest practice\n")
-
+	text = open('raven.txt')
 
 if __name__ == "__main__":
 	main()
