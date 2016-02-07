@@ -1,21 +1,15 @@
 #!/usr/bin/python3
 
 def main():
-	testfunc()
-	popo()
-	arg(75, 34, 22)
+	testfunc(5, 7, 9, 42, 43, 55, one = 1, two = 2, three = 3)
+	namedargs(1,2,3,4,5,6, seven = 7, eight = 8, nine = 9)
 
-def testfunc():
-	print("This is a test function.")
+def testfunc(x, y, z, *args, **kwargs):
+	print("This is a test function.", x, y, z, args, kwargs['one'], kwargs['two'], kwargs['three'])
+def namedargs(x, y, z, *args, **kwargs):
+	for k in kwargs: print(k, kwargs[k])
+	for n in args: print(n)
 
-def arg(num, ano, more):
-	# Passing args
-	print("This is a test func", num, ano, more)
-
-def popo():
-	# use pass when you need a function but
-	# have no data for it yet
-	pass
 
 if __name__ == "__main__":
 	main() 
