@@ -25,5 +25,7 @@ def main():
 	# Get method with default value
 	print('Ten', x.get('ten', 'Not Found'))
 
+	# Also has pop and del funcs
+
 if __name__ == "__main__":
 	main() 

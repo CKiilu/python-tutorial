@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# cat /usr/share/dict/words > words.txt
 
 def main():
 	sentence = input("Input sentence.")
@@ -10,5 +11,4 @@ def main():
 				continue
 		else:
 			print(x)
-if __name__ == "__main__":
-	main()
+if __name__ == "__main__":main()
